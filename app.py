@@ -10,6 +10,7 @@ df = pd.read_csv('cleaned_airbnb.csv')
 
 # Initialize the app with Bootstrap theme
 app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])  # Try FLATLY, LUX, or CYBORG for a dark theme
+server = app.server
 
 # App layout
 app.layout = dbc.Container(fluid=True, children=[
